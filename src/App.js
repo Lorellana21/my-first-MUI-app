@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AppHeader from "./components/AppHeader";
+import Product from "./components/Product";
+import Address from "./components/Address";
+import productsData from "./mocks/products.json";
+import addressData from "./mocks/address.json";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppHeader />
+
+      <Container>
+        <Typography mt={3} variant="h6">
+          Lista de productos
+        </Typography>
+
+        {productsData.map((item) => (
+          <Product key={item.id} product={item} />
+        ))}
+
+        <Typography mt={3} variant="h6">
+          Lista de direcciones de envío
+        </Typography>
+
+        {addressData.map((item) => (
+          <Address key={item.id} address={item} />
+        ))}
+      </Container>
+    </>
   );
 }
 

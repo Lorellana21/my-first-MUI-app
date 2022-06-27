@@ -1,0 +1,25 @@
+[
+
+    {
+
+      "id": 1,
+
+      "name": "Balón Nike",
+
+      "price": 30,
+
+      "tags": ["nike", "deporte", "accesorio"]
+
+    },
+
+    {
+
+      "id": 2,
+
+      "name": "Zapatillas Addidas",
+
+      "tags": ["addidas", "deporte", "zapatos"]
+
+    }
+
+  ]
