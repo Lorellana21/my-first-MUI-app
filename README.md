@@ -5,21 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Why?
 [Material UI](https://mui.com/) is an extremely useful library of React components that are ready to be used in your application. You can use those like Lego pieces to build beautiful interfaces. The components are ready to go and require minimal amounts of customisation. It saves a lot of development time and lets you hit the ground running. 
 
-## Installation
-
-In the root directory of your application run the following command:
-
-`npm install @mui/material @emotion/react @emotion/styled`
-
-The next step is to install the MUI icons package:
-
-`npm install @mui/icons-material`
 
 ## How to use Material UI
 
 Check out the [official documentation](https://mui.com/material-ui/getting-started/usage/) yourself.
 
-## Available Scripts
+## Installation
 
 In the project directory, you can run:
 
